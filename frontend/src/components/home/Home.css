@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 30px 10px;
+  box-sizing: border-box;
+}
+
+.Home-container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  color: #fff;
+}
+
+.Home-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Button fixed to screen corner */
+.logout-button {
+  position: fixed; /* Screen ke hisaab se set hoga */
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+.Home-title {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.Home-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-direction: column;
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+.add-task-button {
+  padding: 12px;
+  background-color: #ffffff;
+  color: #2575fc;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-task-button:hover {
+  background-color: #e2e2e2;
+}
+
+.task-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.task-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #2575fc;
+  padding: 2px;
+}
+
+.task-card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-word;
+}
+
+.task-title {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+}
+
+.task-action {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.Delete-button {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.edit-button {
+  background-color: #4cd137;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #44bd32;
+}
+
+.Delete-button {
+  background-color: #e84118;
+  color: white;
+}
+
+.Delete-button:hover {
+  background-color: #c23616;
+}
+
+@media (max-width: 480px) {
+  .Home-input {
+    flex-direction: column;
+  }
+
+  .task-input {
+    width: 100%;
+  }
+
+  .task-grid {
+    gap: 10px;
+  }
+
+  .task-title {
+    font-size: 14px;
+  }
+}
